@@ -1,0 +1,276 @@
+.home {
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+}
+
+.bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.hImg {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    height: 60%;
+    width: max-content;
+}
+
+.hImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hSection {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hTitle {
+    margin-top: 30px;
+    font-size: 100px;
+    color: pink;
+}
+
+.hTitle span {
+    color: white;
+}
+
+.awards {
+    width: 40%;
+}
+
+.awards p {
+    font-size: 14px;
+    color: #ddd;
+    margin: 16px 0px;
+}
+
+.awardList {
+    display: flex;
+    gap: 8px;
+}
+
+.awardList img {
+    width: 30px;
+    height: 30px;
+    padding: 6px;
+    background-color: white;
+    border-radius: 100%;
+}
+
+.scroll {
+    margin-bottom: 50px;
+    width: max-content;
+}
+
+.hSection.right {
+    align-items: end;
+}
+
+.follow {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    padding: 8px;
+    background-color: #2f204e;
+    border-bottom-right-radius: 12px;
+}
+
+.follow img {
+    width: 17px;
+    height: 17px;
+}
+
+.followTextContainer {
+    width: 18px;
+    height: 18px;
+}
+
+.followText {
+    background-color: #dd4c62;
+    font-size: 12px;
+    rotate: 90deg;
+    width: max-content;
+    height: 100%;
+    transform-origin: left top;
+    transform: translateY(-18px);
+    padding: 0 8px;
+    display: flex;
+    align-items: center;
+    border-bottom-right-radius: 12px;
+}
+
+.bubbleContainer {
+    width: 50%;
+    display: flex;
+    align-items: end;
+    gap: 8px;
+    justify-content: space-between;
+
+}
+
+.bubble {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    color: #555;
+    padding: 24px;
+    font-size: 16px;
+    border-radius: 20px 20px 0 20px;
+}
+
+.bubbleContainer img {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    object-fit: cover;
+    background-color: #dd4c62;
+}
+
+.certificate {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+    line-height: 20px;
+    font-weight: 300;
+    color: #ddd;
+}
+
+.certificate img {
+    width: 50px;
+    height: 50px;
+}
+
+.contactButton {
+    position: relative;
+}
+
+.contactLink {
+    margin-bottom: 50px;
+}
+
+.circleText {
+    letter-spacing: 2px;
+    font-size: 23px;
+}
+
+.arrow {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width:1536px) {
+    .hTitle {
+        font-size: 72px;
+    }
+}
+
+@media (max-width:1280px) {
+    .bg {
+        height: 60%;
+        top: auto;
+        bottom: 0;
+    }
+
+    .hTitle {
+        font-size: 88px;
+    }
+
+    .hImg {
+        height: 70%;
+    }
+
+    .awards {
+        width: 50%;
+    }
+
+    .bubbleContainer {
+        width: 100%;
+    }
+}
+
+@media (max-width:1024px) {
+    .bg {
+        height: 50%;
+    }
+
+    .hTitle {
+        font-size: 65px;
+    }
+}
+
+@media (max-width:768px) {
+    .home {
+        flex-direction: column;
+
+    }
+
+    .bg {
+        height: 50%;
+    }
+
+    .hSection {
+        width: 100%;
+    }
+
+    .hSection.left {
+        align-items: center;
+        text-align: center;
+        gap: 36px;
+    }
+
+    .hTitle {
+        font-size: 48px;
+        margin-top: 10px;
+    }
+
+    .awards {
+        width: 100%;
+    }
+
+    .awards p {
+        margin-top: 0;
+    }
+
+    .awardList {
+        justify-content: center;
+    }
+
+    .scroll {
+        margin: 0;
+    }
+
+    .hSection.right {
+        justify-content: end;
+    }
+
+    .follow,
+    .bubbleContainer,
+    .certificate {
+        display: none;
+    }
+}
