@@ -1,28 +1,48 @@
+/* Portfolio Section */
 .portfolio {
+    /* Ensure the section remains 100vh (if not already set globally) */
+    height: 100vh;
+
+    /* Use flex to layout the header and grid so they can adjust within 100vh */
+    display: flex;
+    flex-direction: column;
+
+    /* Allow the portfolio content to scroll if it exceeds the available space */
+    overflow-y: auto;
+
+    /* Keep your padding if needed (adjust if you want more room) */
     padding: 2rem 0;
-    
 }
 
+/* Container remains the same */
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
 }
 
+/* Section Title */
 .section-title {
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 3rem;
     color: pink;
+    /* Prevent the title from growing too large inside the flex container */
+    flex-shrink: 0;
 }
 
+/* Projects Grid remains mostly the same but will now be a flex item */
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
     padding: 1rem;
+
+    /* Allow the grid to take remaining space, if needed */
+    flex-grow: 1;
 }
 
+/* Project Card and inner elements */
 .project-card {
     background: white;
     border-radius: 15px;

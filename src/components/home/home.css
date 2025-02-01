@@ -226,11 +226,21 @@
 @media (max-width:768px) {
     .home {
         flex-direction: column;
-
     }
 
     .bg {
         height: 50%;
+    }
+
+    .hImg {
+        height: 50%;
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+    .hImg img {
+        object-position: center;
+        
     }
 
     .hSection {

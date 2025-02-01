@@ -71,6 +71,8 @@ label {
 @media (max-width: 768px) {
     .contact {
         flex-direction: column;
+        height: auto;
+
     }
 
     .cSection {
