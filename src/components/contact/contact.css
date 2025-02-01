@@ -86,4 +86,7 @@ label {
     .cSection:last-child {
         height: 30%;
     }
+    .svg{
+        display: none;
+    }
 }
