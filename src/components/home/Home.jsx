@@ -182,7 +182,7 @@ const Home = () => {
           </Suspense>
         </Canvas>
         <div className="hImg">
-          <img src="/hero.png" alt="" />
+          <img src="/main1.png" alt="" />
         </div>
       </div>
     </div >
